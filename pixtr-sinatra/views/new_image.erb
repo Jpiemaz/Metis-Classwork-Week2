@@ -1,0 +1,14 @@
+<h2>New Image</h2>
+<form action="/galleries/<%= @gallery.id %>/images" method="POST">
+	<div>
+		<label for="new_image">New Image URL</label>
+		<input type="text" name="image[url]" id="new_image">
+		<label for="name">Image Name</label>
+		<input type="text" name="image[name]" id="name">
+		<label for="description">Image Description</label>
+		<input type="text" name="image[description]" id="description">
+	</div>
+	<div>
+		<input type="submit" value="Create">
+	</div>
+</form>
