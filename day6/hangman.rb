@@ -1,7 +1,8 @@
 class Hangman
+  MAX_GUESSES = 6
   def initialize(word)
     @word = word
-    @guesses_remaining = 6
+    @guesses_remaining = MAX_GUESSES
     @guessed_letters = []
   end
   
@@ -64,7 +65,6 @@ class Hangman
   def lost?
     @guesses_remaining == 0
   end
-  
 end
 word = "wombat"
 hangman = Hangman.new(word)
